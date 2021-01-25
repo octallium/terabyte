@@ -1,0 +1,78 @@
+# Project information
+site_name: "Terabyte"
+site_description: "Finance News For Humans (US Markets)"
+site_author: "Octallium"
+site_url: "https://terabyte.app/"
+
+# Copyright
+copyright: "Copyright &copy; 2021 Terabyte, Octallium Inc."
+
+# Configuration
+theme:
+  name: "material"
+  language: "en"
+  logo: "assets/images/brand/terabyte_logo.svg"
+  favicon: "assets/images/brand/terabyte_logo.svg"
+  palette:
+    primary: "white"
+    accent: "green"
+  font:
+    text: "IBM Plex Sans"
+    # code: "Roboto Mono"
+  feature:
+    tabs: true
+
+# Customization
+extra:
+  # manifest: "manifest.webmanifest"
+  social:
+    - icon: fontawesome/brands/youtube
+      link: "https://www.youtube.com/channel/UCEx4qP4PqDukN_EXMz4dC-Q"
+    - icon: fontawesome/brands/twitter
+      link: "https://twitter.com/terabyteapp"
+    - icon: fontawesome/brands/facebook
+      link: "https://www.facebook.com/terabyteapp"
+    - icon: fontawesome/brands/instagram
+      link: "https://www.instagram.com/terabyteapp"
+    - icon: fontawesome/brands/linkedin
+      link: "https://www.linkedin.com/company/terabyteapp"
+
+# Google Analytics
+google_analytics:
+  - "UA-121309781-3"
+  - "auto"
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - meta
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Nav
+nav:
+  - Home: "index.md"
